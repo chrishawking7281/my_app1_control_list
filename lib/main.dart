@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Control List',
       theme: ThemeData(
-        primarySwatch: Colors.yellow,
+        primarySwatch: Colors.blue,
       ),
       home: const HomePage(),
     );
