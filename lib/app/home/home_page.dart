@@ -26,7 +26,16 @@ class HomePage extends StatelessWidget {
             ),
             body: ListView(
               children: [
-                Text('Witaj! ${user.email}'),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text('Witaj! ${user.email}'),
+                    ElevatedButton(
+                      onPressed: () {},
+                      child: const Text('Wyloguj się'),
+                    ),
+                  ],
+                ),
                 const SizedBox(height: 15),
                 Container(
                   decoration: const BoxDecoration(
@@ -37,7 +46,7 @@ class HomePage extends StatelessWidget {
                   padding: const EdgeInsets.all(20),
                   margin: const EdgeInsets.all(10),
                   child: const Text('Przykład 1'),
-                )
+                ),
               ],
             ),
           );
